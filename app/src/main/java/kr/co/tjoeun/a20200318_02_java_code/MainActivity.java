@@ -27,7 +27,7 @@ public class MainActivity extends BaseActivity {
 //        => 데이터 전달을 가능하게 하려면, 해당 클래스 Serializable 역할 수행 명시
         User u = new User("조경진",1988);
 
-        Intent intent = new Intent(MainActivity.this,UserInfoActivity.class);
+        Intent intent = new Intent(mContext,UserInfoActivity.class);
         intent.putExtra("userInfo", u);
         startActivity(intent);
 
